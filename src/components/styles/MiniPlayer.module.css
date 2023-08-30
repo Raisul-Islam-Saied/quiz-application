@@ -1,0 +1,101 @@
+.miniPlayer {
+  width: 320px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 6rem;
+  right: 3.6rem;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 0.4rem;
+}
+
+.miniPlayer p {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0.7rem 0.2rem;
+  color: var(--fontPrimary);
+}
+.miniPlayer .close {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgb(220, 220, 220);
+  z-index: 1;
+}
+.close:hover {
+  color: rgb(126, 126, 126);
+}
+.miniPlayer .open {
+  display: none;
+}
+.player {
+  transform: scale(0);
+  width: 100%;
+  object-fit: auto;
+  animation: miniPlayerimg 0.3s ease forwards;
+}
+@keyframes miniPlayerimg {
+  form {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.floatingBtn {
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: var(--fontPrimary);
+  user-select: none;
+}
+
+.floatingBtn span {
+  color: var(--successGreen);
+}
+
+.floatingBtn:hover {
+  background-color: var(--successGreen);
+}
+.floatingBtn:hover span {
+  color: var(--fontPrimary);
+}
+.floatingBtn .open {
+  display: block;
+}
+
+.floatingBtn .player,
+.floatingBtn p,
+.floatingBtn .close {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .miniPlayer {
+    width: 80%;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .floatingBtn {
+    bottom: 4.8rem;
+    right: 0.5rem;
+  }
+}

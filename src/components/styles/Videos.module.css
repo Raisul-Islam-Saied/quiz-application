@@ -1,0 +1,16 @@
+/* videos component */
+.videos {
+  width: 100%;
+  display: grid;
+  margin: 3rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-items: center;
+  gap: 15px;
+  row-gap: 15px;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .videos {
+    width: 90%;
+  }
+} */

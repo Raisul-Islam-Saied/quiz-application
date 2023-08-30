@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --bodyBackground: #f2f4f8;
+  --successGreen: #00ff84;
+  --dangerRed: #ffc0c7;
+  --questionBG: #e4e8ee;
+  --fontPrimary: #002333;
+  --active: #2dbf64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--fontPrimary);
+  font-family: "Montserrat", sans-serif;
+}
+a,
+Link {
+  text-decoration: none;
+  color: blue;
+}
+li {
+  list-style-type: none;
+}
+body {
+  background-color: var(--bodyBackground);
+  box-sizing: border-box;
+}
+
+h4 {
+  color: #7c83a7;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+/***** column *****/
+.column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media only screen and (max-width: 1023px) {
+  .column {
+    grid-template-columns: 1fr;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none; 
+} 
+/***** End column *****/
+
+.form-title {
+  color: var(--fontPrimary);
+  text-align: left;
+  padding-left: 3rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .form-title {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+/***** signup *****/
+.signup {
+  height: 500px;
+}
+/***** End signup *****/
+
+/***** login *****/
+.login {
+  height: 300px;
+}
+/***** End login *****/
+
+.info {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+.info a {
+  color: rgb(26, 80, 255);
+}
+
+.terms-error {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.common-error {
+  padding-top: 0;
+}
+.correct {
+  background: var(--successGreen) !important;
+  font-weight: 600;
+}
+.wrong {
+  background: var(--dangerRed) !important;
+  font-weight: 600;
+}

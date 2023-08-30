@@ -1,0 +1,12 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+ @media  screen and (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+} 

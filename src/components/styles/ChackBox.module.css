@@ -1,0 +1,12 @@
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.terms input {
+  border: none;
+  outline: none;
+}
+.terms span {
+  font-size: 15px;
+}

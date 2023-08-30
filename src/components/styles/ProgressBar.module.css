@@ -1,0 +1,130 @@
+.progressBar {
+  width: calc(100vw - 10%);
+  margin: 0 auto;
+  height: 65px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  border: 1px solid rgb(233, 233, 233);
+}
+
+@media only screen and (max-width: 700px) {
+  .progressBar {
+    width: calc(100vw - 3%);
+  }
+}
+.backButton {
+  background: rgb(224, 252, 241);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.backButton:hover {
+  background: rgb(175, 255, 204);
+}
+
+.next {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  height: 2.5rem;
+  width: 11rem;
+}
+
+.next:hover span {
+  color: rgb(255, 255, 255);
+}
+.next span:nth-child(1) {
+  font-size: 13px;
+  width: 7rem;
+  font-weight: 600;
+}
+
+.next :hover.next span {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1023px) {
+  .next {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    height: 2.5rem;
+    width: 5rem;
+  }
+  .nextQuection {
+    display: none;
+  }
+}
+
+.rangeArea {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rangeBody {
+  height: 4px;
+  background-color: rgb(249, 235, 254);
+  width: 97%;
+  margin: 0 auto;
+  border-radius: 3rem;
+}
+.progress {
+  height: 4px;
+  background-color: rgb(224, 143, 254);
+  border-radius: 3rem;
+  position: relative;
+  transition: width 0.3s ease;
+}
+
+.progress::after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-color: rgb(224, 143, 254);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip {
+  position: absolute;
+  background: var(--fontPrimary);
+  top: -66px;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  left: calc(30% - 56px);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 15px;
+  border-radius: 0.4rem;
+}
+
+.tooltip::after {
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  background: var(--fontPrimary);
+  position: absolute;
+  border-radius: 0.2rem;
+  top: 27px;
+  right: 3.6rem;
+  transform: rotate(45deg);
+  z-index: -1;
+}

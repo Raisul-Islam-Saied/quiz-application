@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Raisul islam saied</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/grid-list.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="/" class="brand">
+            <img src="./images/logo-bg.png" alt="" />
+            <h3>Raisul Islam Saied</h3>
+          </a>
+        </li>
+      </ul>
+      <div class="account">
+        <span class="material-icons-outlined" title="Account">
+          account_circle
+        </span>
+        <a href="/loagin">login</a>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="container">
+        <h1 class="form-title">Login to your account</h1>
+        <div class="column">
+          <div class="illustration">
+            <img src="/images/login.svg" alt="signup" />
+          </div>
+          <form class="form login" action="#">
+            <div class="form-control">
+              <div class="textInput">
+                <input type="email" placeholder="Enter email" />
+                <span class="material-icons-outlined">alternate_email</span>
+              </div>
+              <p class="error name-error">error message</p>
+            </div>
+
+            <div class="form-control">
+              <div class="textInput">
+                <input type="password" placeholder="Enter password" />
+                <span class="material-icons-outlined">lock</span>
+              </div>
+              <p class="error password-error">error message</p>
+            </div>
+
+            <p class="error common-error">error message</p>
+            <button class="button">submit now</button>
+            <div class="info">
+              <span>
+                Don't have an account?
+                <a href="/signup.html"> Sign up </a>
+                instead
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

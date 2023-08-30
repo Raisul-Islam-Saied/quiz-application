@@ -1,0 +1,20 @@
+.button {
+  outline: none;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: var(--fontPrimary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--successGreen);
+  width: 100%;
+  height: 40px;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: var(--fontPrimary);
+  color: #fff;
+}
